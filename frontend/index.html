@@ -1,37 +1,1140 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Daily News — Trusted Sources</title>
-<style>
-:root{--bg:#f5f5f3;--paper:#fff;--ink:#151515;--muted:#777;--line:#deded9}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
-header{position:sticky;top:0;z-index:10;background:#f5f5f3ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.wrap{max-width:980px;margin:auto;padding:18px 22px}header .wrap{padding-bottom:10px}
-.head{display:flex;justify-content:space-between;align-items:center}.brand{font-size:21px;font-weight:800;letter-spacing:-.03em}.status{font-size:12px;color:var(--muted)}
-.controls{display:flex;gap:7px;flex-wrap:wrap;padding-top:13px}button{border:1px solid var(--line);background:var(--paper);padding:7px 12px;border-radius:999px;font:inherit;font-size:12px;cursor:pointer}
-button.active{background:#111;color:#fff;border-color:#111}main{padding-top:25px;padding-bottom:70px}
-.meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;margin-bottom:9px}
-.story{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:17px 18px;margin:10px 0}.story.read{opacity:.42}
-.row{display:flex;gap:15px}.body{flex:1}h2{font-size:17px;line-height:1.3;margin:0 0 6px}h2 a{color:inherit;text-decoration:none}h2 a:hover{text-decoration:underline}
-.desc{font-size:13px;color:#555;margin:0 0 9px}.by{font-size:11px;color:var(--muted);display:flex;gap:7px;flex-wrap:wrap}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
-.tag,.deep{border-radius:5px;padding:3px 7px;font-size:10px;border:1px solid var(--line);background:#fafafa}.deep{background:#111;color:#fff;border-color:#111;font-weight:800;letter-spacing:.05em}
-.read{white-space:nowrap;font-size:11px;color:var(--muted)}.empty{text-align:center;color:var(--muted);padding:60px 20px}
-@media(max-width:600px){.wrap{padding-left:14px;padding-right:14px}.story{padding:14px}.row{gap:8px}h2{font-size:16px}}
-</style></head><body>
-<header><div class="wrap"><div class="head"><div class="brand">Daily News</div><div class="status" id="status">Loading…</div></div>
-<div class="controls"><button class="active" data-range="today">Today</button><button data-range="week">This Week</button>
-<button class="active" data-topic="all">All</button><button data-topic="International">International</button><button data-topic="Climate">Climate</button><button data-topic="Investigative">Investigative</button><button data-topic="Far-Right/Politics">Far-Right/Politics</button></div></div></header>
-<main class="wrap"><div class="meta"><span id="count"></span><button id="unread">Show unread only</button></div><section id="feed"></section></main>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Daily News</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f7f5;
+      color: #171717;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 42px 0 24px;
+      border-bottom: 1px solid #deded9;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 750;
+      letter-spacing: -0.055em;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: #6b6b67;
+      font-size: 0.95rem;
+    }
+
+    .status {
+      color: #777;
+      font-size: 0.8rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .controls {
+      padding: 20px 0 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 247, 245, 0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    .control-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      border: 1px solid #d1d1cc;
+      background: #fff;
+      color: #333;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      font-size: 0.86rem;
+      cursor: pointer;
+      transition: 0.15s ease;
+    }
+
+    button:hover {
+      border-color: #999;
+      background: #f0f0ed;
+    }
+
+    button.active {
+      background: #171717;
+      color: #fff;
+      border-color: #171717;
+    }
+
+    .secondary {
+      color: #666;
+    }
+
+    .feed {
+      padding: 12px 0 60px;
+    }
+
+    .day-heading {
+      margin: 24px 0 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #deded9;
+      font-size: 0.78rem;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #777;
+    }
+
+    .story {
+      position: relative;
+      padding: 22px 0 24px;
+      border-bottom: 1px solid #deded9;
+    }
+
+    .story.read {
+      opacity: 0.52;
+    }
+
+    .story-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 7px;
+      font-size: 0.78rem;
+      color: #73736f;
+    }
+
+    .source {
+      color: #222;
+      font-weight: 750;
+    }
+
+    .separator {
+      color: #bbb;
+    }
+
+    .deep-dive {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 3px 6px;
+      background: #171717;
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .story-title {
+      margin: 0 0 9px;
+      font-size: clamp(1.15rem, 3vw, 1.45rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .story-title a {
+      text-decoration: none;
+    }
+
+    .story-title a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    .description {
+      max-width: 760px;
+      margin: 0 0 13px;
+      color: #555;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .story-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 3px 7px;
+      color: #777;
+      font-size: 0.68rem;
+    }
+
+    .read-control {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #777;
+      font-size: 0.78rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .read-control input {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+
+    .empty {
+      padding: 70px 0;
+      text-align: center;
+      color: #777;
+    }
+
+    .empty strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #333;
+    }
+
+    .error {
+      margin-top: 25px;
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      color: #8a1f1f;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 30px 0 50px;
+      color: #888;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      border-top: 1px solid #deded9;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding-top: 28px;
+      }
+
+      .header-top {
+        display: block;
+      }
+
+      .status {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .controls {
+        position: static;
+      }
+
+      .story-bottom {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div>
+          <h1>Daily News</h1>
+          <p class="subtitle">
+            A chronological feed from trusted news sources around the world.
+          </p>
+        </div>
+
+        <div class="status" id="status">
+          Loading news…
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="controls">
+
+      <div class="control-row" aria-label="Time period">
+        <button class="time-filter active" data-period="today">
+          Today
+        </button>
+
+        <button class="time-filter" data-period="week">
+          This Week
+        </button>
+      </div>
+
+      <div class="control-row" aria-label="Topics">
+
+        <button class="topic-filter active" data-topic="All">
+          All
+        </button>
+
+        <button class="topic-filter" data-topic="International">
+          International
+        </button>
+
+        <button class="topic-filter" data-topic="Climate">
+          Climate
+        </button>
+
+        <button class="topic-filter" data-topic="Investigative">
+          Investigative
+        </button>
+
+        <button class="topic-filter" data-topic="Far-Right/Politics">
+          Far-Right / Politics
+        </button>
+
+      </div>
+
+      <div class="control-row">
+
+        <button id="unreadToggle" class="secondary">
+          Show unread only
+        </button>
+
+      </div>
+
+    </section>
+
+    <section id="feed" class="feed"></section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      News is gathered automatically from the configured RSS/Atom sources.
+      Topic classification and Deep Dive labels are automated and may not
+      always be perfect. Always check the original article for full context.
+    </div>
+  </footer>
+
+
 <script>
-let articles=[],range="today",topic="all",unread=false;const KEY="trusted-news-read-v2",read=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"));
-const $=s=>document.querySelector(s), feed=$("#feed");
-function day(d){return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
-function list(){let now=new Date(),start=day(now);if(range==="week"){start.setDate(start.getDate()-6)}
-return articles.filter(a=>new Date(a.published)>=start&&(topic==="all"||a.topics.includes(topic))&&(!unread||!read.has(a.id))).sort((a,b)=>new Date(b.published)-new Date(a.published))}
-function esc(s){return String(s||"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]))}
-function render(){let xs=list();$("#count").textContent=`${xs.length} ${xs.length===1?"story":"stories"}`;$("#unread").textContent=unread?"Show all":"Show unread only";
-feed.innerHTML=xs.length?xs.map(a=>`<article class="story ${read.has(a.id)?"read":""}"><div class="row"><div class="body"><h2><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h2>${a.description?`<p class="desc">${esc(a.description)}</p>`:""}<div class="by"><span>${esc(a.source)}</span><span>·</span><span>${new Date(a.published).toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</span></div><div class="tags">${a.deep_dive?'<span class="deep">DEEP DIVE</span>':""}${a.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div></div><label class="read"><input type="checkbox" data-id="${a.id}" ${read.has(a.id)?"checked":""}> Read</label></div></article>`).join(""):'<div class="empty">No stories match these filters.</div>';
-feed.querySelectorAll("input").forEach(x=>x.onchange=()=>{x.checked?read.add(x.dataset.id):read.delete(x.dataset.id);localStorage.setItem(KEY,JSON.stringify([...read]));render()})}
-document.querySelectorAll("[data-range]").forEach(b=>b.onclick=()=>{range=b.dataset.range;document.querySelectorAll("[data-range]").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()});
-document.querySelectorAll("[data-topic]").forEach(b=>b.onclick=()=>{topic=b.dataset.topic;document.querySelectorAll("[data-topic]").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()});
-$("#unread").onclick=()=>{unread=!unread;render()};
-fetch("./data/articles.json?"+Date.now()).then(r=>r.json()).then(x=>{articles=x;$("#status").textContent=`${x.length} stories available`;render()}).catch(()=>{$("#status").textContent="Feed unavailable";feed.innerHTML='<div class="empty">Run the Python updater, then refresh.</div>'});
-</script></body></html>
+
+  /*
+    ============================================================
+    DAILY NEWS DASHBOARD
+    ============================================================
+
+    This page loads:
+
+        ./data/articles.json
+
+    The Python updater creates that file.
+
+    Important:
+    Dates are converted using JavaScript's Date object rather
+    than relying on string comparisons.
+
+    This handles dates such as:
+
+        2026-09-17T13:10:34.996221+00:00
+  */
+
+
+  const DATA_URL = "./data/articles.json";
+
+  const READ_STORAGE_KEY = "trusted-news-read-v2";
+
+
+  let articles = [];
+
+  let selectedPeriod = "today";
+
+  let selectedTopic = "All";
+
+  let unreadOnly = false;
+
+
+  /*
+    ------------------------------------------------------------
+    Read / unread storage
+    ------------------------------------------------------------
+  */
+
+  function getReadArticles() {
+
+    try {
+
+      const stored = localStorage.getItem(READ_STORAGE_KEY);
+
+      if (!stored) {
+        return new Set();
+      }
+
+      return new Set(JSON.parse(stored));
+
+    } catch (error) {
+
+      console.warn("Could not read saved read-state:", error);
+
+      return new Set();
+
+    }
+
+  }
+
+
+  let readArticles = getReadArticles();
+
+
+  function saveReadArticles() {
+
+    try {
+
+      localStorage.setItem(
+        READ_STORAGE_KEY,
+        JSON.stringify([...readArticles])
+      );
+
+    } catch (error) {
+
+      console.warn("Could not save read-state:", error);
+
+    }
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Date handling
+    ------------------------------------------------------------
+  */
+
+  function parseDate(value) {
+
+    if (!value) {
+      return null;
+    }
+
+    const date = new Date(value);
+
+    if (Number.isNaN(date.getTime())) {
+      return null;
+    }
+
+    return date;
+
+  }
+
+
+  function startOfToday() {
+
+    const now = new Date();
+
+    return new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate(),
+      0,
+      0,
+      0,
+      0
+    );
+
+  }
+
+
+  function startOfWeek() {
+
+    const now = new Date();
+
+    /*
+      Monday = beginning of the week.
+
+      JavaScript:
+        Sunday = 0
+        Monday = 1
+        ...
+    */
+
+    const day = now.getDay();
+
+    const daysSinceMonday = (day + 6) % 7;
+
+    const monday = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate(),
+      0,
+      0,
+      0,
+      0
+    );
+
+    monday.setDate(monday.getDate() - daysSinceMonday);
+
+    return monday;
+
+  }
+
+
+  function isInSelectedPeriod(articleDate) {
+
+    if (!articleDate) {
+      return false;
+    }
+
+    const now = new Date();
+
+    if (selectedPeriod === "today") {
+
+      const start = startOfToday();
+
+      return articleDate >= start && articleDate <= now;
+
+    }
+
+    if (selectedPeriod === "week") {
+
+      const start = startOfWeek();
+
+      return articleDate >= start && articleDate <= now;
+
+    }
+
+    return true;
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Formatting
+    ------------------------------------------------------------
+  */
+
+  function formatDate(date) {
+
+    if (!date) {
+      return "Date unavailable";
+    }
+
+    return new Intl.DateTimeFormat(
+      undefined,
+      {
+        weekday: "short",
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }
+    ).format(date);
+
+  }
+
+
+  function dateKey(date) {
+
+    if (!date) {
+      return "Unknown date";
+    }
+
+    return new Intl.DateTimeFormat(
+      undefined,
+      {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      }
+    ).format(date);
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    HTML escaping
+    ------------------------------------------------------------
+  */
+
+  function escapeHtml(value) {
+
+    if (value === null || value === undefined) {
+      return "";
+    }
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Topic matching
+    ------------------------------------------------------------
+  */
+
+  function articleMatchesTopic(article) {
+
+    if (selectedTopic === "All") {
+      return true;
+    }
+
+    const topics = Array.isArray(article.topics)
+      ? article.topics
+      : [];
+
+    return topics.includes(selectedTopic);
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Filtering
+    ------------------------------------------------------------
+  */
+
+  function getFilteredArticles() {
+
+    return articles
+      .filter(article => {
+
+        const date = parseDate(article.published);
+
+        return isInSelectedPeriod(date);
+
+      })
+      .filter(article => {
+
+        return articleMatchesTopic(article);
+
+      })
+      .filter(article => {
+
+        if (!unreadOnly) {
+          return true;
+        }
+
+        return !readArticles.has(article.id);
+
+      })
+      .sort((a, b) => {
+
+        const dateA = parseDate(a.published);
+
+        const dateB = parseDate(b.published);
+
+        const timeA = dateA ? dateA.getTime() : 0;
+
+        const timeB = dateB ? dateB.getTime() : 0;
+
+        return timeB - timeA;
+
+      });
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Render
+    ------------------------------------------------------------
+  */
+
+  function render() {
+
+    const feed = document.getElementById("feed");
+
+    const status = document.getElementById("status");
+
+    feed.innerHTML = "";
+
+
+    if (!Array.isArray(articles)) {
+
+      feed.innerHTML = `
+        <div class="error">
+          The news data is not in the expected format.
+        </div>
+      `;
+
+      status.textContent = "Data error";
+
+      return;
+
+    }
+
+
+    const filtered = getFilteredArticles();
+
+
+    const unreadCount = articles.filter(
+      article => !readArticles.has(article.id)
+    ).length;
+
+
+    status.textContent =
+      `${filtered.length} stories · ${unreadCount} unread`;
+
+
+    if (filtered.length === 0) {
+
+      let message =
+        "No stories match these filters.";
+
+      if (articles.length === 0) {
+
+        message =
+          "No news stories have been loaded yet.";
+
+      }
+
+      feed.innerHTML = `
+        <div class="empty">
+          <strong>${message}</strong>
+          <span>
+            Try changing the time period or topic filter.
+          </span>
+        </div>
+      `;
+
+      return;
+
+    }
+
+
+    /*
+      Group stories by day.
+    */
+
+    let currentDay = null;
+
+    filtered.forEach(article => {
+
+      const date = parseDate(article.published);
+
+      const day = dateKey(date);
+
+
+      if (day !== currentDay) {
+
+        currentDay = day;
+
+        const heading = document.createElement("div");
+
+        heading.className = "day-heading";
+
+        heading.textContent = day;
+
+        feed.appendChild(heading);
+
+      }
+
+
+      const story = document.createElement("article");
+
+      story.className = "story";
+
+
+      if (readArticles.has(article.id)) {
+
+        story.classList.add("read");
+
+      }
+
+
+      const topics = Array.isArray(article.topics)
+        ? article.topics
+        : [];
+
+
+      const topicHtml = topics
+        .map(topic => `
+          <span class="tag">${escapeHtml(topic)}</span>
+        `)
+        .join("");
+
+
+      const deepDiveHtml =
+        article.deep_dive === true
+          ? `<span class="deep-dive">DEEP DIVE</span>`
+          : "";
+
+
+      const description =
+        article.description ||
+        article.summary ||
+        "";
+
+
+      const safeUrl =
+        article.url ||
+        "#";
+
+
+      story.innerHTML = `
+
+        <div class="story-meta">
+
+          <span class="source">
+            ${escapeHtml(article.source || "Unknown source")}
+          </span>
+
+          <span class="separator">•</span>
+
+          <span>
+            ${escapeHtml(formatDate(date))}
+          </span>
+
+          ${deepDiveHtml}
+
+        </div>
+
+
+        <h2 class="story-title">
+
+          <a
+            href="${escapeHtml(safeUrl)}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ${escapeHtml(article.title || "Untitled story")}
+          </a>
+
+        </h2>
+
+
+        ${
+          description
+            ? `
+              <p class="description">
+                ${escapeHtml(description)}
+              </p>
+            `
+            : ""
+        }
+
+
+        <div class="story-bottom">
+
+          <div class="tags">
+            ${topicHtml}
+          </div>
+
+
+          <label class="read-control">
+
+            <input
+              type="checkbox"
+              ${readArticles.has(article.id) ? "checked" : ""}
+              data-read-id="${escapeHtml(article.id)}"
+            >
+
+            Read
+
+          </label>
+
+        </div>
+
+      `;
+
+
+      const checkbox =
+        story.querySelector("input[data-read-id]");
+
+
+      if (checkbox) {
+
+        checkbox.addEventListener("change", event => {
+
+          const id = event.target.dataset.readId;
+
+          if (event.target.checked) {
+
+            readArticles.add(id);
+
+          } else {
+
+            readArticles.delete(id);
+
+          }
+
+          saveReadArticles();
+
+          render();
+
+        });
+
+      }
+
+
+      feed.appendChild(story);
+
+    });
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    Buttons
+    ------------------------------------------------------------
+  */
+
+
+  document.querySelectorAll(".time-filter")
+    .forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document
+          .querySelectorAll(".time-filter")
+          .forEach(b => b.classList.remove("active"));
+
+        button.classList.add("active");
+
+        selectedPeriod =
+          button.dataset.period;
+
+        render();
+
+      });
+
+    });
+
+
+  document.querySelectorAll(".topic-filter")
+    .forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document
+          .querySelectorAll(".topic-filter")
+          .forEach(b => b.classList.remove("active"));
+
+        button.classList.add("active");
+
+        selectedTopic =
+          button.dataset.topic;
+
+        render();
+
+      });
+
+    });
+
+
+  document
+    .getElementById("unreadToggle")
+    .addEventListener("click", event => {
+
+      unreadOnly = !unreadOnly;
+
+      event.currentTarget.classList.toggle(
+        "active",
+        unreadOnly
+      );
+
+      event.currentTarget.textContent =
+        unreadOnly
+          ? "Showing unread only"
+          : "Show unread only";
+
+      render();
+
+    });
+
+
+  /*
+    ------------------------------------------------------------
+    Load news
+    ------------------------------------------------------------
+  */
+
+  async function loadNews() {
+
+    const status =
+      document.getElementById("status");
+
+
+    try {
+
+      status.textContent =
+        "Loading news…";
+
+
+      /*
+        The timestamp prevents GitHub Pages/browser caching
+        an old articles.json file.
+      */
+
+      const response =
+        await fetch(
+          `${DATA_URL}?v=${Date.now()}`,
+          {
+            cache: "no-store"
+          }
+        );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          `HTTP ${response.status}`
+        );
+
+      }
+
+
+      const data =
+        await response.json();
+
+
+      if (!Array.isArray(data)) {
+
+        throw new Error(
+          "articles.json does not contain an array"
+        );
+
+      }
+
+
+      articles = data;
+
+
+      /*
+        Remove invalid/empty records.
+        This also protects the interface if one source
+        produces incomplete RSS metadata.
+      */
+
+      articles = articles.filter(article => {
+
+        return article &&
+          typeof article === "object" &&
+          article.id &&
+          article.title;
+
+      });
+
+
+      render();
+
+
+    } catch (error) {
+
+      console.error(
+        "News loading error:",
+        error
+      );
+
+
+      status.textContent =
+        "Could not load news";
+
+
+      document.getElementById("feed").innerHTML = `
+
+        <div class="error">
+
+          <strong>
+            The dashboard could not load the news data.
+          </strong>
+
+          <br><br>
+
+          Check that:
+
+          <ul>
+            <li>
+              <code>frontend/data/articles.json</code>
+              exists in your GitHub repository.
+            </li>
+
+            <li>
+              The file contains valid JSON.
+            </li>
+
+            <li>
+              GitHub Pages has deployed the latest version.
+            </li>
+          </ul>
+
+          <small>
+            Technical detail:
+            ${escapeHtml(error.message)}
+          </small>
+
+        </div>
+
+      `;
+
+    }
+
+  }
+
+
+  /*
+    Start application.
+  */
+
+  loadNews();
+
+</script>
+
+</body>
+</html>
+```

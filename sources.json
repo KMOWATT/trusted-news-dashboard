@@ -1,0 +1,565 @@
+{
+  "sources": [
+    {
+      "name": "BBC News",
+      "website": "https://www.bbc.com/news",
+      "rss": "https://feeds.bbci.co.uk/news/rss.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Guardian",
+      "website": "https://www.theguardian.com",
+      "rss": "https://www.theguardian.com/world/rss",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Independent",
+      "website": "https://www.independent.co.uk",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Der Spiegel",
+      "website": "https://www.spiegel.de",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Süddeutsche Zeitung",
+      "website": "https://www.sueddeutsche.de",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Frankfurter Allgemeine Zeitung (FAZ)",
+      "website": "https://www.faz.net",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Tagesschau (ARD)",
+      "website": "https://www.tagesschau.de",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "ZDF",
+      "website": "https://www.zdf.de",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Le Monde",
+      "website": "https://www.lemonde.fr",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Le Figaro",
+      "website": "https://www.lefigaro.fr",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "France Info",
+      "website": "https://www.francetvinfo.fr",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Libération",
+      "website": "https://www.liberation.fr",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Mediapart",
+      "website": "https://www.mediapart.fr",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "El País",
+      "website": "https://elpais.com",
+      "rss": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "El Mundo",
+      "website": "https://www.elmundo.es",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "RTVE",
+      "website": "https://www.rtve.es",
+      "rss": "https://www.rtve.es/api/temas/rss.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Corriere della Sera",
+      "website": "https://www.corriere.it",
+      "rss": "https://xml2.corriereobjects.it/rss/homepage.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "La Repubblica",
+      "website": "https://www.repubblica.it",
+      "rss": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "RAI News",
+      "website": "https://www.rainews.it",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Associated Press (AP)",
+      "website": "https://apnews.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Reuters",
+      "website": "https://www.reuters.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The New York Times",
+      "website": "https://www.nytimes.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Wall Street Journal",
+      "website": "https://www.wsj.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "NPR",
+      "website": "https://www.npr.org",
+      "rss": "https://feeds.npr.org/1001/rss.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "PBS NewsHour",
+      "website": "https://www.pbs.org/newshour",
+      "rss": "https://www.pbs.org/newshour/feeds/rss/headlines",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "ProPublica",
+      "website": "https://www.propublica.org",
+      "rss": "https://feeds.propublica.org/propublica/main",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Intercept",
+      "website": "https://theintercept.com",
+      "rss": "https://theintercept.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "CBC/Radio-Canada",
+      "website": "https://www.cbc.ca",
+      "rss": "https://rss.cbc.ca/lineup/topstories.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Globe and Mail",
+      "website": "https://www.theglobeandmail.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Toronto Star",
+      "website": "https://www.thestar.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "NHK World",
+      "website": "https://www3.nhk.or.jp/nhkworld/",
+      "rss": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Asahi Shimbun",
+      "website": "https://www.asahi.com/ajw/",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Yomiuri Shimbun (Japan News)",
+      "website": "https://japannews.yomiuri.co.jp",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Nikkei Asia",
+      "website": "https://asia.nikkei.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "South China Morning Post",
+      "website": "https://www.scmp.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Hindu",
+      "website": "https://www.thehindu.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Indian Express",
+      "website": "https://indianexpress.com",
+      "rss": "https://indianexpress.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "ABC News (Australia)",
+      "website": "https://www.abc.net.au/news",
+      "rss": "https://www.abc.net.au/news/feed/51120/rss.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Sydney Morning Herald",
+      "website": "https://www.smh.com.au",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Age",
+      "website": "https://www.theage.com.au",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Australian",
+      "website": "https://www.theaustralian.com.au",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Meduza",
+      "website": "https://meduza.io/en",
+      "rss": "https://meduza.io/rss/en/all",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Novaya Gazeta Europe",
+      "website": "https://novayagazeta.eu",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "TV Rain (Dozhd)",
+      "website": "https://tvrain.tv",
+      "rss": "https://tvrain.tv/rss/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Al Jazeera English",
+      "website": "https://www.aljazeera.com",
+      "rss": "https://www.aljazeera.com/xml/rss/all.xml",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Deutsche Welle (DW)",
+      "website": "https://www.dw.com",
+      "rss": "https://rss.dw.com/rdf/rss-en-all",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "France 24",
+      "website": "https://www.france24.com",
+      "rss": "https://www.france24.com/en/rss",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "ICIJ",
+      "website": "https://www.icij.org",
+      "rss": "https://www.icij.org/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Bellingcat",
+      "website": "https://www.bellingcat.com",
+      "rss": "https://www.bellingcat.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Bureau of Investigative Journalism",
+      "website": "https://www.thebureauinvestigates.com",
+      "rss": "https://www.thebureauinvestigates.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Glenn Greenwald",
+      "website": "https://greenwald.substack.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Rappler",
+      "website": "https://www.rappler.com",
+      "rss": "https://www.rappler.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Daily Maverick",
+      "website": "https://www.dailymaverick.co.za",
+      "rss": "https://www.dailymaverick.co.za/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Mail & Guardian",
+      "website": "https://mg.co.za",
+      "rss": "https://mg.co.za/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Premium Times",
+      "website": "https://www.premiumtimesng.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Nation Media Group",
+      "website": "https://nation.africa",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Addis Standard",
+      "website": "https://addisstandard.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "The Africa Report",
+      "website": "https://www.theafricareport.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Africanews",
+      "website": "https://www.africanews.com",
+      "rss": "https://www.africanews.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "allAfrica.com",
+      "website": "https://allafrica.com",
+      "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Folha de S.Paulo",
+      "website": "https://www1.folha.uol.com.br",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "O Globo",
+      "website": "https://oglobo.globo.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "La Nación",
+      "website": "https://www.lanacion.com.ar",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Clarín",
+      "website": "https://www.clarin.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Infobae",
+      "website": "https://www.infobae.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "El Espectador",
+      "website": "https://www.elespectador.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "El Tiempo",
+      "website": "https://www.eltiempo.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "El Mercurio (Emol)",
+      "website": "https://www.emol.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Reforma",
+      "website": "https://www.reforma.com",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Proceso",
+      "website": "https://www.proceso.com.mx",
+      "rss": "",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "Prensa Libre",
+      "website": "https://www.prensalibre.com",
+      "rss": "https://www.prensalibre.com/feed/",
+      "enabled": true,
+      "max_items": 25
+    },
+    {
+      "name": "MercoPress",
+      "website": "https://en.mercopress.com",
+      "rss": "https://en.mercopress.com/rss",
+      "enabled": true,
+      "max_items": 25
+    }
+  ],
+  "notes": "RSS URLs are populated where a known public feed endpoint was available. Blank RSS fields are intentionally not guessed and are reported by the fetcher. Source list comes from Worldwide_Trusted_News_Sources.docx.",
+  "topic_keywords": {
+    "International": [
+      "international",
+      "global",
+      "world",
+      "foreign",
+      "diplomacy",
+      "war",
+      "conflict",
+      "ukraine",
+      "gaza",
+      "iran",
+      "russia",
+      "china",
+      "middle east",
+      "europe"
+    ],
+    "Climate": [
+      "climate",
+      "climate change",
+      "global warming",
+      "emissions",
+      "carbon",
+      "net zero",
+      "biodiversity",
+      "environment",
+      "wildfire",
+      "drought",
+      "flood"
+    ],
+    "Investigative": [
+      "investigation",
+      "investigative",
+      "in-depth",
+      "long read",
+      "longform",
+      "special report",
+      "exposé",
+      "expose",
+      "data investigation"
+    ],
+    "Far-Right/Politics": [
+      "far-right",
+      "far right",
+      "extreme right",
+      "election",
+      "government",
+      "minister",
+      "parliament",
+      "politics",
+      "political",
+      "populist",
+      "president",
+      "prime minister"
+    ]
+  }
+}

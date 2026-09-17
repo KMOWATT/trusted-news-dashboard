@@ -1,0 +1,386 @@
+[
+  {
+    "source": "BBC News",
+    "status": "ok",
+    "rss": "https://feeds.bbci.co.uk/news/rss.xml",
+    "items": 23
+  },
+  {
+    "source": "The Guardian",
+    "status": "ok",
+    "rss": "https://www.theguardian.com/world/rss",
+    "items": 25
+  },
+  {
+    "source": "The Independent",
+    "status": "ok",
+    "rss": "https://www.independent.co.uk/us/rss",
+    "items": 6
+  },
+  {
+    "source": "Der Spiegel",
+    "status": "ok",
+    "rss": "https://www.spiegel.de/schlagzeilen/index.rss",
+    "items": 25
+  },
+  {
+    "source": "Süddeutsche Zeitung",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Frankfurter Allgemeine Zeitung (FAZ)",
+    "status": "ok",
+    "rss": "https://www.faz.net/rss/aktuell/",
+    "items": 25
+  },
+  {
+    "source": "Tagesschau (ARD)",
+    "status": "ok",
+    "rss": "https://www.tagesschau.de/index~atom.xml",
+    "items": 24
+  },
+  {
+    "source": "ZDF",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Le Monde",
+    "status": "ok",
+    "rss": "https://www.lemonde.fr/en/rss/une.xml",
+    "items": 18
+  },
+  {
+    "source": "Le Figaro",
+    "status": "no RSS found"
+  },
+  {
+    "source": "France Info",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Libération",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Mediapart",
+    "status": "no RSS found"
+  },
+  {
+    "source": "El País",
+    "status": "ok",
+    "rss": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+    "items": 25
+  },
+  {
+    "source": "El Mundo",
+    "status": "ok",
+    "rss": "https://www.elmundo.es/rss/googlenews/portada.xml",
+    "items": 25
+  },
+  {
+    "source": "RTVE",
+    "status": "error",
+    "rss": "https://www.rtve.es/api/temas/rss.xml",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "Corriere della Sera",
+    "status": "ok",
+    "rss": "https://xml2.corriereobjects.it/rss/homepage.xml",
+    "items": 0
+  },
+  {
+    "source": "La Repubblica",
+    "status": "ok",
+    "rss": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+    "items": 25
+  },
+  {
+    "source": "RAI News",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Associated Press (AP)",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Reuters",
+    "status": "no RSS found"
+  },
+  {
+    "source": "The New York Times",
+    "status": "no RSS found"
+  },
+  {
+    "source": "The Wall Street Journal",
+    "status": "no RSS found"
+  },
+  {
+    "source": "NPR",
+    "status": "ok",
+    "rss": "https://feeds.npr.org/1001/rss.xml",
+    "items": 10
+  },
+  {
+    "source": "PBS NewsHour",
+    "status": "ok",
+    "rss": "https://www.pbs.org/newshour/feeds/rss/headlines",
+    "items": 20
+  },
+  {
+    "source": "ProPublica",
+    "status": "ok",
+    "rss": "https://feeds.propublica.org/propublica/main",
+    "items": 15
+  },
+  {
+    "source": "The Intercept",
+    "status": "ok",
+    "rss": "https://theintercept.com/feed/",
+    "items": 15
+  },
+  {
+    "source": "CBC/Radio-Canada",
+    "status": "error",
+    "rss": "https://rss.cbc.ca/lineup/topstories.xml",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "source": "The Globe and Mail",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Toronto Star",
+    "status": "error",
+    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "NHK World",
+    "status": "ok",
+    "rss": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+    "items": 0
+  },
+  {
+    "source": "Asahi Shimbun",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Yomiuri Shimbun (Japan News)",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Nikkei Asia",
+    "status": "no RSS found"
+  },
+  {
+    "source": "South China Morning Post",
+    "status": "ok",
+    "rss": "https://www.scmp.com/rss/feed",
+    "items": 25
+  },
+  {
+    "source": "The Hindu",
+    "status": "ok",
+    "rss": "https://www.thehindu.com/feeder/default.rss",
+    "items": 25
+  },
+  {
+    "source": "Indian Express",
+    "status": "error",
+    "rss": "https://indianexpress.com/feed/",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "ABC News (Australia)",
+    "status": "ok",
+    "rss": "https://www.abc.net.au/news/feed/51120/rss.xml",
+    "items": 25
+  },
+  {
+    "source": "Sydney Morning Herald",
+    "status": "ok",
+    "rss": "https://www.smh.com.au/rss/feed.xml",
+    "items": 20
+  },
+  {
+    "source": "The Age",
+    "status": "ok",
+    "rss": "https://www.theage.com.au/rss/feed.xml",
+    "items": 20
+  },
+  {
+    "source": "The Australian",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Meduza",
+    "status": "ok",
+    "rss": "https://meduza.io/rss/en/all",
+    "items": 25
+  },
+  {
+    "source": "Novaya Gazeta Europe",
+    "status": "ok",
+    "rss": "https://novayagazeta.eu/feed/rss",
+    "items": 25
+  },
+  {
+    "source": "TV Rain (Dozhd)",
+    "status": "error",
+    "rss": "https://tvrain.tv/rss/",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "Al Jazeera English",
+    "status": "ok",
+    "rss": "https://www.aljazeera.com/xml/rss/all.xml",
+    "items": 25
+  },
+  {
+    "source": "Deutsche Welle (DW)",
+    "status": "ok",
+    "rss": "https://rss.dw.com/rdf/rss-en-all",
+    "items": 25
+  },
+  {
+    "source": "France 24",
+    "status": "ok",
+    "rss": "https://www.france24.com/en/rss",
+    "items": 24
+  },
+  {
+    "source": "ICIJ",
+    "status": "ok",
+    "rss": "https://www.icij.org/feed/",
+    "items": 8
+  },
+  {
+    "source": "Bellingcat",
+    "status": "ok",
+    "rss": "https://www.bellingcat.com/feed/",
+    "items": 2
+  },
+  {
+    "source": "The Bureau of Investigative Journalism",
+    "status": "error",
+    "rss": "https://www.thebureauinvestigates.com/feed/",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "Glenn Greenwald",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Rappler",
+    "status": "ok",
+    "rss": "https://www.rappler.com/feed/",
+    "items": 10
+  },
+  {
+    "source": "Daily Maverick",
+    "status": "error",
+    "rss": "https://www.dailymaverick.co.za/feed/",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "Mail & Guardian",
+    "status": "error",
+    "rss": "https://mg.co.za/feed/",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "Premium Times",
+    "status": "ok",
+    "rss": "https://www.premiumtimesng.com/feed",
+    "items": 15
+  },
+  {
+    "source": "Nation Media Group",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Addis Standard",
+    "status": "no RSS found"
+  },
+  {
+    "source": "The Africa Report",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Africanews",
+    "status": "ok",
+    "rss": "https://www.africanews.com/feed/",
+    "items": 25
+  },
+  {
+    "source": "allAfrica.com",
+    "status": "ok",
+    "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+    "items": 25
+  },
+  {
+    "source": "Folha de S.Paulo",
+    "status": "no RSS found"
+  },
+  {
+    "source": "O Globo",
+    "status": "ok",
+    "rss": "https://oglobo.globo.com/rss/oglobo",
+    "items": 25
+  },
+  {
+    "source": "La Nación",
+    "status": "ok",
+    "rss": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/",
+    "items": 25
+  },
+  {
+    "source": "Clarín",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Infobae",
+    "status": "ok",
+    "rss": "https://www.infobae.com/arc/outboundfeeds/rss/category/estados-unidos/",
+    "items": 25
+  },
+  {
+    "source": "El Espectador",
+    "status": "ok",
+    "rss": "https://www.elespectador.com/feed/",
+    "items": 0
+  },
+  {
+    "source": "El Tiempo",
+    "status": "error",
+    "rss": "https://www.eltiempo.com/rss",
+    "error": "invalid/empty feed"
+  },
+  {
+    "source": "El Mercurio (Emol)",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Reforma",
+    "status": "ok",
+    "rss": "https://www.reforma.com/rss/portada.xml",
+    "items": 6
+  },
+  {
+    "source": "Proceso",
+    "status": "no RSS found"
+  },
+  {
+    "source": "Prensa Libre",
+    "status": "ok",
+    "rss": "https://www.prensalibre.com/feed/",
+    "items": 25
+  },
+  {
+    "source": "MercoPress",
+    "status": "ok",
+    "rss": "https://en.mercopress.com/rss",
+    "items": 10
+  }
+]

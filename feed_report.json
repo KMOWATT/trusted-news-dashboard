@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 23
+    "items": 25
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 6
+    "items": 4
   },
   {
     "source": "Der Spiegel",
@@ -37,7 +37,7 @@
     "source": "Tagesschau (ARD)",
     "status": "ok",
     "rss": "https://www.tagesschau.de/index~atom.xml",
-    "items": 24
+    "items": 25
   },
   {
     "source": "ZDF",
@@ -131,7 +131,7 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 15
+    "items": 14
   },
   {
     "source": "The Intercept",
@@ -365,7 +365,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 6
+    "items": 10
   },
   {
     "source": "Proceso",

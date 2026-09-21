@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 24
+    "items": 25
   },
   {
     "source": "The Guardian",
@@ -31,7 +31,7 @@
     "source": "Frankfurter Allgemeine Zeitung (FAZ)",
     "status": "ok",
     "rss": "https://www.faz.net/rss/aktuell/",
-    "items": 24
+    "items": 25
   },
   {
     "source": "Tagesschau (ARD)",
@@ -251,7 +251,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 10
+    "items": 11
   },
   {
     "source": "Bellingcat",
@@ -315,7 +315,7 @@
     "source": "allAfrica.com",
     "status": "ok",
     "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
-    "items": 25
+    "items": 24
   },
   {
     "source": "Folha de S.Paulo",

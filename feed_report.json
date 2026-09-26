@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 8
+    "items": 4
   },
   {
     "source": "Der Spiegel",
@@ -131,7 +131,7 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 11
+    "items": 12
   },
   {
     "source": "The Intercept",
@@ -317,7 +317,7 @@
     "source": "allAfrica.com",
     "status": "ok",
     "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
-    "items": 24
+    "items": 25
   },
   {
     "source": "Folha de S.Paulo",

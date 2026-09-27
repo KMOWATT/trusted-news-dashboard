@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 25
+    "items": 22
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 4
+    "items": 3
   },
   {
     "source": "Der Spiegel",
@@ -31,7 +31,7 @@
     "source": "Frankfurter Allgemeine Zeitung (FAZ)",
     "status": "ok",
     "rss": "https://www.faz.net/rss/aktuell/",
-    "items": 25
+    "items": 24
   },
   {
     "source": "Tagesschau (ARD)",
@@ -47,7 +47,7 @@
     "source": "Le Monde",
     "status": "ok",
     "rss": "https://www.lemonde.fr/en/rss/une.xml",
-    "items": 18
+    "items": 17
   },
   {
     "source": "Le Figaro",
@@ -75,7 +75,7 @@
     "source": "El Mundo",
     "status": "ok",
     "rss": "https://www.elmundo.es/rss/googlenews/portada.xml",
-    "items": 25
+    "items": 24
   },
   {
     "source": "RTVE",
@@ -131,13 +131,13 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 12
+    "items": 10
   },
   {
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 19
+    "items": 16
   },
   {
     "source": "CBC/Radio-Canada",
@@ -151,9 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
+    "status": "error",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "error": "invalid/empty feed"
   },
   {
     "source": "NHK World",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 7
+    "items": 5
   },
   {
     "source": "Bellingcat",
@@ -317,7 +317,7 @@
     "source": "allAfrica.com",
     "status": "ok",
     "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
-    "items": 25
+    "items": 24
   },
   {
     "source": "Folha de S.Paulo",

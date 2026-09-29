@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 23
+    "items": 25
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 0
+    "items": 7
   },
   {
     "source": "Der Spiegel",
@@ -91,9 +91,9 @@
   },
   {
     "source": "La Repubblica",
-    "status": "ok",
+    "status": "error",
     "rss": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
-    "items": 25
+    "error": "invalid/empty feed"
   },
   {
     "source": "RAI News",
@@ -131,13 +131,13 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 9
+    "items": 12
   },
   {
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 17
+    "items": 19
   },
   {
     "source": "CBC/Radio-Canada",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 5
+    "items": 4
   },
   {
     "source": "Bellingcat",
@@ -317,7 +317,7 @@
     "source": "allAfrica.com",
     "status": "ok",
     "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
-    "items": 25
+    "items": 24
   },
   {
     "source": "Folha de S.Paulo",
@@ -365,7 +365,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 6
+    "items": 10
   },
   {
     "source": "Proceso",

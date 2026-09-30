@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 7
+    "items": 6
   },
   {
     "source": "Der Spiegel",
@@ -31,7 +31,7 @@
     "source": "Frankfurter Allgemeine Zeitung (FAZ)",
     "status": "ok",
     "rss": "https://www.faz.net/rss/aktuell/",
-    "items": 25
+    "items": 24
   },
   {
     "source": "Tagesschau (ARD)",
@@ -91,9 +91,9 @@
   },
   {
     "source": "La Repubblica",
-    "status": "error",
+    "status": "ok",
     "rss": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
-    "error": "invalid/empty feed"
+    "items": 25
   },
   {
     "source": "RAI News",
@@ -137,7 +137,7 @@
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 19
+    "items": 20
   },
   {
     "source": "CBC/Radio-Canada",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 4
+    "items": 3
   },
   {
     "source": "Bellingcat",
@@ -291,9 +291,7 @@
   },
   {
     "source": "Premium Times",
-    "status": "ok",
-    "rss": "https://www.premiumtimesng.com/feed",
-    "items": 15
+    "status": "no RSS found"
   },
   {
     "source": "Nation Media Group",

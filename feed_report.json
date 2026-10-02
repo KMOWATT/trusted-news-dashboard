@@ -31,7 +31,7 @@
     "source": "Frankfurter Allgemeine Zeitung (FAZ)",
     "status": "ok",
     "rss": "https://www.faz.net/rss/aktuell/",
-    "items": 24
+    "items": 25
   },
   {
     "source": "Tagesschau (ARD)",
@@ -137,7 +137,7 @@
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 20
+    "items": 17
   },
   {
     "source": "CBC/Radio-Canada",
@@ -151,9 +151,7 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
-    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "status": "no RSS found"
   },
   {
     "source": "NHK World",
@@ -253,13 +251,13 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 3
+    "items": 2
   },
   {
     "source": "Bellingcat",
     "status": "ok",
     "rss": "https://www.bellingcat.com/feed/",
-    "items": 0
+    "items": 1
   },
   {
     "source": "The Bureau of Investigative Journalism",
@@ -291,7 +289,9 @@
   },
   {
     "source": "Premium Times",
-    "status": "no RSS found"
+    "status": "ok",
+    "rss": "https://www.premiumtimesng.com/feed",
+    "items": 15
   },
   {
     "source": "Nation Media Group",

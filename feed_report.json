@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 6
+    "items": 5
   },
   {
     "source": "Der Spiegel",
@@ -131,13 +131,13 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 12
+    "items": 14
   },
   {
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 17
+    "items": 15
   },
   {
     "source": "CBC/Radio-Canada",
@@ -151,7 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "no RSS found"
+    "status": "ok",
+    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
+    "items": 0
   },
   {
     "source": "NHK World",
@@ -251,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 2
+    "items": 3
   },
   {
     "source": "Bellingcat",

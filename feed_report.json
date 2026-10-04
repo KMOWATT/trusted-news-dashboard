@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 25
+    "items": 23
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 5
+    "items": 1
   },
   {
     "source": "Der Spiegel",
@@ -131,13 +131,13 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 14
+    "items": 11
   },
   {
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 15
+    "items": 13
   },
   {
     "source": "CBC/Radio-Canada",
@@ -151,9 +151,7 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
-    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "status": "no RSS found"
   },
   {
     "source": "NHK World",
@@ -365,7 +363,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 10
+    "items": 6
   },
   {
     "source": "Proceso",

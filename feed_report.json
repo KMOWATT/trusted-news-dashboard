@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 4
+    "items": 6
   },
   {
     "source": "Der Spiegel",
@@ -137,7 +137,7 @@
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 12
+    "items": 13
   },
   {
     "source": "CBC/Radio-Canada",
@@ -259,7 +259,7 @@
     "source": "Bellingcat",
     "status": "ok",
     "rss": "https://www.bellingcat.com/feed/",
-    "items": 1
+    "items": 2
   },
   {
     "source": "The Bureau of Investigative Journalism",

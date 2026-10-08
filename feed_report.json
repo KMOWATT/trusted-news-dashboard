@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 24
+    "items": 25
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 6
+    "items": 5
   },
   {
     "source": "Der Spiegel",
@@ -31,7 +31,7 @@
     "source": "Frankfurter Allgemeine Zeitung (FAZ)",
     "status": "ok",
     "rss": "https://www.faz.net/rss/aktuell/",
-    "items": 24
+    "items": 25
   },
   {
     "source": "Tagesschau (ARD)",
@@ -137,7 +137,7 @@
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 13
+    "items": 11
   },
   {
     "source": "CBC/Radio-Canada",
@@ -151,9 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
+    "status": "error",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "error": "invalid/empty feed"
   },
   {
     "source": "NHK World",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 4
+    "items": 5
   },
   {
     "source": "Bellingcat",
@@ -317,7 +317,7 @@
     "source": "allAfrica.com",
     "status": "ok",
     "rss": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
-    "items": 24
+    "items": 25
   },
   {
     "source": "Folha de S.Paulo",

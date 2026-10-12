@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 22
+    "items": 24
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 2
+    "items": 5
   },
   {
     "source": "Der Spiegel",
@@ -137,7 +137,7 @@
     "source": "The Intercept",
     "status": "ok",
     "rss": "https://theintercept.com/feed/",
-    "items": 13
+    "items": 15
   },
   {
     "source": "CBC/Radio-Canada",

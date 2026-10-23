@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 4
+    "items": 6
   },
   {
     "source": "Der Spiegel",
@@ -151,9 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
+    "status": "error",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "error": "invalid/empty feed"
   },
   {
     "source": "NHK World",
@@ -259,7 +259,7 @@
     "source": "Bellingcat",
     "status": "ok",
     "rss": "https://www.bellingcat.com/feed/",
-    "items": 2
+    "items": 1
   },
   {
     "source": "The Bureau of Investigative Journalism",

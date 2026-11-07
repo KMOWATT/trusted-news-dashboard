@@ -3,19 +3,19 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 24
+    "items": 23
   },
   {
     "source": "The Guardian",
     "status": "ok",
     "rss": "https://www.theguardian.com/world/rss",
-    "items": 25
+    "items": 24
   },
   {
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 7
+    "items": 4
   },
   {
     "source": "Der Spiegel",
@@ -131,7 +131,7 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 16
+    "items": 15
   },
   {
     "source": "The Intercept",
@@ -151,9 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "error",
+    "status": "ok",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "error": "invalid/empty feed"
+    "items": 0
   },
   {
     "source": "NHK World",
@@ -253,13 +253,13 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 6
+    "items": 5
   },
   {
     "source": "Bellingcat",
     "status": "ok",
     "rss": "https://www.bellingcat.com/feed/",
-    "items": 3
+    "items": 2
   },
   {
     "source": "The Bureau of Investigative Journalism",
@@ -379,8 +379,8 @@
   },
   {
     "source": "MercoPress",
-    "status": "error",
+    "status": "ok",
     "rss": "https://en.mercopress.com/rss",
-    "error": "invalid/empty feed"
+    "items": 10
   }
 ]

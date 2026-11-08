@@ -9,13 +9,13 @@
     "source": "The Guardian",
     "status": "ok",
     "rss": "https://www.theguardian.com/world/rss",
-    "items": 24
+    "items": 25
   },
   {
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 4
+    "items": 1
   },
   {
     "source": "Der Spiegel",
@@ -151,9 +151,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
+    "status": "error",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "error": "invalid/empty feed"
   },
   {
     "source": "NHK World",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 5
+    "items": 4
   },
   {
     "source": "Bellingcat",

@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 1
+    "items": 7
   },
   {
     "source": "Der Spiegel",
@@ -253,7 +253,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 4
+    "items": 3
   },
   {
     "source": "Bellingcat",
@@ -365,7 +365,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 10
+    "items": 6
   },
   {
     "source": "Proceso",

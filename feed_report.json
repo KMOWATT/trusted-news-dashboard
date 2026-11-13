@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 22
+    "items": 25
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 4
+    "items": 5
   },
   {
     "source": "Der Spiegel",
@@ -111,7 +111,7 @@
     "source": "The New York Times",
     "status": "ok",
     "rss": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-    "items": 17
+    "items": 19
   },
   {
     "source": "The Wall Street Journal",
@@ -133,7 +133,7 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 17
+    "items": 18
   },
   {
     "source": "The Intercept",
@@ -153,9 +153,9 @@
   },
   {
     "source": "Toronto Star",
-    "status": "error",
+    "status": "ok",
     "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "error": "invalid/empty feed"
+    "items": 0
   },
   {
     "source": "NHK World",
@@ -261,7 +261,7 @@
     "source": "Bellingcat",
     "status": "ok",
     "rss": "https://www.bellingcat.com/feed/",
-    "items": 1
+    "items": 0
   },
   {
     "source": "The Bureau of Investigative Journalism",

@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 24
+    "items": 23
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 7
+    "items": 5
   },
   {
     "source": "Der Spiegel",
@@ -109,9 +109,7 @@
   },
   {
     "source": "The New York Times",
-    "status": "ok",
-    "rss": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-    "items": 23
+    "status": "no RSS found"
   },
   {
     "source": "The Wall Street Journal",
@@ -133,7 +131,7 @@
     "source": "ProPublica",
     "status": "ok",
     "rss": "https://feeds.propublica.org/propublica/main",
-    "items": 19
+    "items": 20
   },
   {
     "source": "The Intercept",
@@ -153,9 +151,7 @@
   },
   {
     "source": "Toronto Star",
-    "status": "ok",
-    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "items": 0
+    "status": "no RSS found"
   },
   {
     "source": "NHK World",
@@ -255,7 +251,7 @@
     "source": "ICIJ",
     "status": "ok",
     "rss": "https://www.icij.org/feed/",
-    "items": 3
+    "items": 4
   },
   {
     "source": "Bellingcat",
@@ -293,7 +289,9 @@
   },
   {
     "source": "Premium Times",
-    "status": "no RSS found"
+    "status": "ok",
+    "rss": "https://www.premiumtimesng.com/feed",
+    "items": 15
   },
   {
     "source": "Nation Media Group",
@@ -365,7 +363,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 10
+    "items": 6
   },
   {
     "source": "Proceso",

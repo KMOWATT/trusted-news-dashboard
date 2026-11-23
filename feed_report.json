@@ -3,7 +3,7 @@
     "source": "BBC News",
     "status": "ok",
     "rss": "https://feeds.bbci.co.uk/news/rss.xml",
-    "items": 22
+    "items": 24
   },
   {
     "source": "The Guardian",
@@ -15,7 +15,7 @@
     "source": "The Independent",
     "status": "ok",
     "rss": "https://www.independent.co.uk/us/rss",
-    "items": 2
+    "items": 3
   },
   {
     "source": "Der Spiegel",
@@ -151,9 +151,7 @@
   },
   {
     "source": "Toronto Star",
-    "status": "error",
-    "rss": "http://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
-    "error": "invalid/empty feed"
+    "status": "no RSS found"
   },
   {
     "source": "NHK World",
@@ -365,7 +363,7 @@
     "source": "Reforma",
     "status": "ok",
     "rss": "https://www.reforma.com/rss/portada.xml",
-    "items": 6
+    "items": 10
   },
   {
     "source": "Proceso",
